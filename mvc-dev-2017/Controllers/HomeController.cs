@@ -26,5 +26,24 @@ namespace mvc_dev_2017.Controllers
 
             return View();
         }
+
+        public int Sum(int x, int y)
+        {
+            return x + x;
+        }
+
+        public string GetWeather(int Temp)
+        {
+            if (Temp < 0)
+            {
+                return "I need a coffee";
+            }
+            else if (Temp < 25) {
+                return "I need a smoothie";
+            }
+            else {
+                return "I need a margarita";
+            }
+        }
     }
 }
